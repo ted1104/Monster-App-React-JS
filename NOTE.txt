@@ -8,3 +8,10 @@ GITHUB PAGE DEPLOY APP
 =====================
 1. After connecting to your repository
 2. install gh-pages : yarn gh-pages
+3. in package json add 
+    # "homepage": "https://ted1104.github.io/Monster-App-React-JS",
+    #"predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+4. then run yarn deploy
+5. then git add . adn commit at least push
+6. it create a branch calling gh-pages in the repositry
