@@ -1,0 +1,3 @@
+si tu declare une fonction sans utilisé le bind dans le constructeur, cette fonction ne peut pas avoir access au proprietés this de la classe
+this.handleChange = this.handleChange.bind(this)
+Mais par contre avec les fonctions flechées ca donne directement access au proprieté this de la classe
