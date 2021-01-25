@@ -2,6 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component'
 import { SearchBox } from './components/search-box/search-box.componenent'
+import { Cycle } from './components/others/cycle.component'
 
 class App extends Component {
   constructor(){
@@ -34,7 +35,7 @@ class App extends Component {
       )
     return (
       <div className="App">
-        <h1>{title}</h1>
+         <h1>{title}</h1>
          <SearchBox 
           placeholder = 'Search monsters'
           handleChange = { this.handleChange }
@@ -45,6 +46,8 @@ class App extends Component {
          {/* <CardList name = "teddy">
          { this.state.monsters.map(monster => <h1 key = {monster.id}> { monster.name} </h1>) }
          </CardList> */}
+
+         {/* <Cycle /> */}
         
       </div>
     )
